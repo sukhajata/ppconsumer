@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='pplogger',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n\x10ppconsumer.proto\x12\x08pplogger\"f\n\x08\x43onsumer\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x10\n\x08username\x18\x02 \x01(\t\x12\r\n\x05\x65mail\x18\x03 \x01(\t\x12-\n\rinstallations\x18\x04 \x03(\x0b\x32\x16.pplogger.Installation\"3\n\x0cInstallation\x12\x10\n\x08IDNumber\x18\x01 \x01(\t\x12\x11\n\tdeviceEUI\x18\x02 \x03(\t\"#\n\x0f\x43onsumerRequest\x12\x10\n\x08username\x18\x01 \x01(\t\"\x19\n\x08Response\x12\r\n\x05reply\x18\x01 \x01(\t2\x8a\x02\n\rLoggerService\x12:\n\x0e\x43reateConsumer\x12\x12.pplogger.Consumer\x1a\x12.pplogger.Consumer\"\x00\x12:\n\x0eUpdateConsumer\x12\x12.pplogger.Consumer\x1a\x12.pplogger.Consumer\"\x00\x12>\n\x0bGetConsumer\x12\x19.pplogger.ConsumerRequest\x1a\x12.pplogger.Consumer\"\x00\x12\x41\n\x0e\x44\x65leteConsumer\x12\x19.pplogger.ConsumerRequest\x1a\x12.pplogger.Response\"\x00\x62\x06proto3')
+  serialized_pb=_b('\n\x10ppconsumer.proto\x12\x08pplogger\"f\n\x08\x43onsumer\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x10\n\x08username\x18\x02 \x01(\t\x12\r\n\x05\x65mail\x18\x03 \x01(\t\x12-\n\rinstallations\x18\x04 \x03(\x0b\x32\x16.pplogger.Installation\"3\n\x0cInstallation\x12\x10\n\x08IDNumber\x18\x01 \x01(\t\x12\x11\n\tdeviceEUI\x18\x02 \x03(\t\"#\n\x0f\x43onsumerRequest\x12\x10\n\x08username\x18\x01 \x01(\t\"\x19\n\x08Response\x12\r\n\x05reply\x18\x01 \x01(\t2\x8c\x02\n\x0f\x43onsumerService\x12:\n\x0e\x43reateConsumer\x12\x12.pplogger.Consumer\x1a\x12.pplogger.Consumer\"\x00\x12:\n\x0eUpdateConsumer\x12\x12.pplogger.Consumer\x1a\x12.pplogger.Consumer\"\x00\x12>\n\x0bGetConsumer\x12\x19.pplogger.ConsumerRequest\x1a\x12.pplogger.Consumer\"\x00\x12\x41\n\x0e\x44\x65leteConsumer\x12\x19.pplogger.ConsumerRequest\x1a\x12.pplogger.Response\"\x00\x62\x06proto3')
 )
 
 
@@ -214,18 +214,18 @@ _sym_db.RegisterMessage(Response)
 
 
 
-_LOGGERSERVICE = _descriptor.ServiceDescriptor(
-  name='LoggerService',
-  full_name='pplogger.LoggerService',
+_CONSUMERSERVICE = _descriptor.ServiceDescriptor(
+  name='ConsumerService',
+  full_name='pplogger.ConsumerService',
   file=DESCRIPTOR,
   index=0,
   serialized_options=None,
   serialized_start=252,
-  serialized_end=518,
+  serialized_end=520,
   methods=[
   _descriptor.MethodDescriptor(
     name='CreateConsumer',
-    full_name='pplogger.LoggerService.CreateConsumer',
+    full_name='pplogger.ConsumerService.CreateConsumer',
     index=0,
     containing_service=None,
     input_type=_CONSUMER,
@@ -234,7 +234,7 @@ _LOGGERSERVICE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='UpdateConsumer',
-    full_name='pplogger.LoggerService.UpdateConsumer',
+    full_name='pplogger.ConsumerService.UpdateConsumer',
     index=1,
     containing_service=None,
     input_type=_CONSUMER,
@@ -243,7 +243,7 @@ _LOGGERSERVICE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='GetConsumer',
-    full_name='pplogger.LoggerService.GetConsumer',
+    full_name='pplogger.ConsumerService.GetConsumer',
     index=2,
     containing_service=None,
     input_type=_CONSUMERREQUEST,
@@ -252,7 +252,7 @@ _LOGGERSERVICE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='DeleteConsumer',
-    full_name='pplogger.LoggerService.DeleteConsumer',
+    full_name='pplogger.ConsumerService.DeleteConsumer',
     index=3,
     containing_service=None,
     input_type=_CONSUMERREQUEST,
@@ -260,8 +260,8 @@ _LOGGERSERVICE = _descriptor.ServiceDescriptor(
     serialized_options=None,
   ),
 ])
-_sym_db.RegisterServiceDescriptor(_LOGGERSERVICE)
+_sym_db.RegisterServiceDescriptor(_CONSUMERSERVICE)
 
-DESCRIPTOR.services_by_name['LoggerService'] = _LOGGERSERVICE
+DESCRIPTOR.services_by_name['ConsumerService'] = _CONSUMERSERVICE
 
 # @@protoc_insertion_point(module_scope)

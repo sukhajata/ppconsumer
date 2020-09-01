@@ -22,7 +22,7 @@ proto.pplogger = require('./ppconsumer_pb.js');
  * @struct
  * @final
  */
-proto.pplogger.LoggerServiceClient =
+proto.pplogger.ConsumerServiceClient =
     function(hostname, credentials, options) {
   if (!options) options = {};
   options['format'] = 'text';
@@ -48,7 +48,7 @@ proto.pplogger.LoggerServiceClient =
  * @struct
  * @final
  */
-proto.pplogger.LoggerServicePromiseClient =
+proto.pplogger.ConsumerServicePromiseClient =
     function(hostname, credentials, options) {
   if (!options) options = {};
   options['format'] = 'text';
@@ -72,8 +72,8 @@ proto.pplogger.LoggerServicePromiseClient =
  *   !proto.pplogger.Consumer,
  *   !proto.pplogger.Consumer>}
  */
-const methodDescriptor_LoggerService_CreateConsumer = new grpc.web.MethodDescriptor(
-  '/pplogger.LoggerService/CreateConsumer',
+const methodDescriptor_ConsumerService_CreateConsumer = new grpc.web.MethodDescriptor(
+  '/pplogger.ConsumerService/CreateConsumer',
   grpc.web.MethodType.UNARY,
   proto.pplogger.Consumer,
   proto.pplogger.Consumer,
@@ -94,7 +94,7 @@ const methodDescriptor_LoggerService_CreateConsumer = new grpc.web.MethodDescrip
  *   !proto.pplogger.Consumer,
  *   !proto.pplogger.Consumer>}
  */
-const methodInfo_LoggerService_CreateConsumer = new grpc.web.AbstractClientBase.MethodInfo(
+const methodInfo_ConsumerService_CreateConsumer = new grpc.web.AbstractClientBase.MethodInfo(
   proto.pplogger.Consumer,
   /**
    * @param {!proto.pplogger.Consumer} request
@@ -117,13 +117,13 @@ const methodInfo_LoggerService_CreateConsumer = new grpc.web.AbstractClientBase.
  * @return {!grpc.web.ClientReadableStream<!proto.pplogger.Consumer>|undefined}
  *     The XHR Node Readable Stream
  */
-proto.pplogger.LoggerServiceClient.prototype.createConsumer =
+proto.pplogger.ConsumerServiceClient.prototype.createConsumer =
     function(request, metadata, callback) {
   return this.client_.rpcCall(this.hostname_ +
-      '/pplogger.LoggerService/CreateConsumer',
+      '/pplogger.ConsumerService/CreateConsumer',
       request,
       metadata || {},
-      methodDescriptor_LoggerService_CreateConsumer,
+      methodDescriptor_ConsumerService_CreateConsumer,
       callback);
 };
 
@@ -136,13 +136,13 @@ proto.pplogger.LoggerServiceClient.prototype.createConsumer =
  * @return {!Promise<!proto.pplogger.Consumer>}
  *     A native promise that resolves to the response
  */
-proto.pplogger.LoggerServicePromiseClient.prototype.createConsumer =
+proto.pplogger.ConsumerServicePromiseClient.prototype.createConsumer =
     function(request, metadata) {
   return this.client_.unaryCall(this.hostname_ +
-      '/pplogger.LoggerService/CreateConsumer',
+      '/pplogger.ConsumerService/CreateConsumer',
       request,
       metadata || {},
-      methodDescriptor_LoggerService_CreateConsumer);
+      methodDescriptor_ConsumerService_CreateConsumer);
 };
 
 
@@ -152,8 +152,8 @@ proto.pplogger.LoggerServicePromiseClient.prototype.createConsumer =
  *   !proto.pplogger.Consumer,
  *   !proto.pplogger.Consumer>}
  */
-const methodDescriptor_LoggerService_UpdateConsumer = new grpc.web.MethodDescriptor(
-  '/pplogger.LoggerService/UpdateConsumer',
+const methodDescriptor_ConsumerService_UpdateConsumer = new grpc.web.MethodDescriptor(
+  '/pplogger.ConsumerService/UpdateConsumer',
   grpc.web.MethodType.UNARY,
   proto.pplogger.Consumer,
   proto.pplogger.Consumer,
@@ -174,7 +174,7 @@ const methodDescriptor_LoggerService_UpdateConsumer = new grpc.web.MethodDescrip
  *   !proto.pplogger.Consumer,
  *   !proto.pplogger.Consumer>}
  */
-const methodInfo_LoggerService_UpdateConsumer = new grpc.web.AbstractClientBase.MethodInfo(
+const methodInfo_ConsumerService_UpdateConsumer = new grpc.web.AbstractClientBase.MethodInfo(
   proto.pplogger.Consumer,
   /**
    * @param {!proto.pplogger.Consumer} request
@@ -197,13 +197,13 @@ const methodInfo_LoggerService_UpdateConsumer = new grpc.web.AbstractClientBase.
  * @return {!grpc.web.ClientReadableStream<!proto.pplogger.Consumer>|undefined}
  *     The XHR Node Readable Stream
  */
-proto.pplogger.LoggerServiceClient.prototype.updateConsumer =
+proto.pplogger.ConsumerServiceClient.prototype.updateConsumer =
     function(request, metadata, callback) {
   return this.client_.rpcCall(this.hostname_ +
-      '/pplogger.LoggerService/UpdateConsumer',
+      '/pplogger.ConsumerService/UpdateConsumer',
       request,
       metadata || {},
-      methodDescriptor_LoggerService_UpdateConsumer,
+      methodDescriptor_ConsumerService_UpdateConsumer,
       callback);
 };
 
@@ -216,13 +216,13 @@ proto.pplogger.LoggerServiceClient.prototype.updateConsumer =
  * @return {!Promise<!proto.pplogger.Consumer>}
  *     A native promise that resolves to the response
  */
-proto.pplogger.LoggerServicePromiseClient.prototype.updateConsumer =
+proto.pplogger.ConsumerServicePromiseClient.prototype.updateConsumer =
     function(request, metadata) {
   return this.client_.unaryCall(this.hostname_ +
-      '/pplogger.LoggerService/UpdateConsumer',
+      '/pplogger.ConsumerService/UpdateConsumer',
       request,
       metadata || {},
-      methodDescriptor_LoggerService_UpdateConsumer);
+      methodDescriptor_ConsumerService_UpdateConsumer);
 };
 
 
@@ -232,8 +232,8 @@ proto.pplogger.LoggerServicePromiseClient.prototype.updateConsumer =
  *   !proto.pplogger.ConsumerRequest,
  *   !proto.pplogger.Consumer>}
  */
-const methodDescriptor_LoggerService_GetConsumer = new grpc.web.MethodDescriptor(
-  '/pplogger.LoggerService/GetConsumer',
+const methodDescriptor_ConsumerService_GetConsumer = new grpc.web.MethodDescriptor(
+  '/pplogger.ConsumerService/GetConsumer',
   grpc.web.MethodType.UNARY,
   proto.pplogger.ConsumerRequest,
   proto.pplogger.Consumer,
@@ -254,7 +254,7 @@ const methodDescriptor_LoggerService_GetConsumer = new grpc.web.MethodDescriptor
  *   !proto.pplogger.ConsumerRequest,
  *   !proto.pplogger.Consumer>}
  */
-const methodInfo_LoggerService_GetConsumer = new grpc.web.AbstractClientBase.MethodInfo(
+const methodInfo_ConsumerService_GetConsumer = new grpc.web.AbstractClientBase.MethodInfo(
   proto.pplogger.Consumer,
   /**
    * @param {!proto.pplogger.ConsumerRequest} request
@@ -277,13 +277,13 @@ const methodInfo_LoggerService_GetConsumer = new grpc.web.AbstractClientBase.Met
  * @return {!grpc.web.ClientReadableStream<!proto.pplogger.Consumer>|undefined}
  *     The XHR Node Readable Stream
  */
-proto.pplogger.LoggerServiceClient.prototype.getConsumer =
+proto.pplogger.ConsumerServiceClient.prototype.getConsumer =
     function(request, metadata, callback) {
   return this.client_.rpcCall(this.hostname_ +
-      '/pplogger.LoggerService/GetConsumer',
+      '/pplogger.ConsumerService/GetConsumer',
       request,
       metadata || {},
-      methodDescriptor_LoggerService_GetConsumer,
+      methodDescriptor_ConsumerService_GetConsumer,
       callback);
 };
 
@@ -296,13 +296,13 @@ proto.pplogger.LoggerServiceClient.prototype.getConsumer =
  * @return {!Promise<!proto.pplogger.Consumer>}
  *     A native promise that resolves to the response
  */
-proto.pplogger.LoggerServicePromiseClient.prototype.getConsumer =
+proto.pplogger.ConsumerServicePromiseClient.prototype.getConsumer =
     function(request, metadata) {
   return this.client_.unaryCall(this.hostname_ +
-      '/pplogger.LoggerService/GetConsumer',
+      '/pplogger.ConsumerService/GetConsumer',
       request,
       metadata || {},
-      methodDescriptor_LoggerService_GetConsumer);
+      methodDescriptor_ConsumerService_GetConsumer);
 };
 
 
@@ -312,8 +312,8 @@ proto.pplogger.LoggerServicePromiseClient.prototype.getConsumer =
  *   !proto.pplogger.ConsumerRequest,
  *   !proto.pplogger.Response>}
  */
-const methodDescriptor_LoggerService_DeleteConsumer = new grpc.web.MethodDescriptor(
-  '/pplogger.LoggerService/DeleteConsumer',
+const methodDescriptor_ConsumerService_DeleteConsumer = new grpc.web.MethodDescriptor(
+  '/pplogger.ConsumerService/DeleteConsumer',
   grpc.web.MethodType.UNARY,
   proto.pplogger.ConsumerRequest,
   proto.pplogger.Response,
@@ -334,7 +334,7 @@ const methodDescriptor_LoggerService_DeleteConsumer = new grpc.web.MethodDescrip
  *   !proto.pplogger.ConsumerRequest,
  *   !proto.pplogger.Response>}
  */
-const methodInfo_LoggerService_DeleteConsumer = new grpc.web.AbstractClientBase.MethodInfo(
+const methodInfo_ConsumerService_DeleteConsumer = new grpc.web.AbstractClientBase.MethodInfo(
   proto.pplogger.Response,
   /**
    * @param {!proto.pplogger.ConsumerRequest} request
@@ -357,13 +357,13 @@ const methodInfo_LoggerService_DeleteConsumer = new grpc.web.AbstractClientBase.
  * @return {!grpc.web.ClientReadableStream<!proto.pplogger.Response>|undefined}
  *     The XHR Node Readable Stream
  */
-proto.pplogger.LoggerServiceClient.prototype.deleteConsumer =
+proto.pplogger.ConsumerServiceClient.prototype.deleteConsumer =
     function(request, metadata, callback) {
   return this.client_.rpcCall(this.hostname_ +
-      '/pplogger.LoggerService/DeleteConsumer',
+      '/pplogger.ConsumerService/DeleteConsumer',
       request,
       metadata || {},
-      methodDescriptor_LoggerService_DeleteConsumer,
+      methodDescriptor_ConsumerService_DeleteConsumer,
       callback);
 };
 
@@ -376,13 +376,13 @@ proto.pplogger.LoggerServiceClient.prototype.deleteConsumer =
  * @return {!Promise<!proto.pplogger.Response>}
  *     A native promise that resolves to the response
  */
-proto.pplogger.LoggerServicePromiseClient.prototype.deleteConsumer =
+proto.pplogger.ConsumerServicePromiseClient.prototype.deleteConsumer =
     function(request, metadata) {
   return this.client_.unaryCall(this.hostname_ +
-      '/pplogger.LoggerService/DeleteConsumer',
+      '/pplogger.ConsumerService/DeleteConsumer',
       request,
       metadata || {},
-      methodDescriptor_LoggerService_DeleteConsumer);
+      methodDescriptor_ConsumerService_DeleteConsumer);
 };
 
 

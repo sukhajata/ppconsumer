@@ -272,24 +272,24 @@ var file_ppconsumer_proto_rawDesc = []byte{
 	0x6d, 0x65, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09, 0x52, 0x08, 0x75, 0x73, 0x65, 0x72, 0x6e, 0x61,
 	0x6d, 0x65, 0x22, 0x20, 0x0a, 0x08, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x12, 0x14,
 	0x0a, 0x05, 0x72, 0x65, 0x70, 0x6c, 0x79, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09, 0x52, 0x05, 0x72,
-	0x65, 0x70, 0x6c, 0x79, 0x32, 0x8a, 0x02, 0x0a, 0x0d, 0x4c, 0x6f, 0x67, 0x67, 0x65, 0x72, 0x53,
-	0x65, 0x72, 0x76, 0x69, 0x63, 0x65, 0x12, 0x3a, 0x0a, 0x0e, 0x43, 0x72, 0x65, 0x61, 0x74, 0x65,
-	0x43, 0x6f, 0x6e, 0x73, 0x75, 0x6d, 0x65, 0x72, 0x12, 0x12, 0x2e, 0x70, 0x70, 0x6c, 0x6f, 0x67,
-	0x67, 0x65, 0x72, 0x2e, 0x43, 0x6f, 0x6e, 0x73, 0x75, 0x6d, 0x65, 0x72, 0x1a, 0x12, 0x2e, 0x70,
-	0x70, 0x6c, 0x6f, 0x67, 0x67, 0x65, 0x72, 0x2e, 0x43, 0x6f, 0x6e, 0x73, 0x75, 0x6d, 0x65, 0x72,
-	0x22, 0x00, 0x12, 0x3a, 0x0a, 0x0e, 0x55, 0x70, 0x64, 0x61, 0x74, 0x65, 0x43, 0x6f, 0x6e, 0x73,
-	0x75, 0x6d, 0x65, 0x72, 0x12, 0x12, 0x2e, 0x70, 0x70, 0x6c, 0x6f, 0x67, 0x67, 0x65, 0x72, 0x2e,
-	0x43, 0x6f, 0x6e, 0x73, 0x75, 0x6d, 0x65, 0x72, 0x1a, 0x12, 0x2e, 0x70, 0x70, 0x6c, 0x6f, 0x67,
-	0x67, 0x65, 0x72, 0x2e, 0x43, 0x6f, 0x6e, 0x73, 0x75, 0x6d, 0x65, 0x72, 0x22, 0x00, 0x12, 0x3e,
-	0x0a, 0x0b, 0x47, 0x65, 0x74, 0x43, 0x6f, 0x6e, 0x73, 0x75, 0x6d, 0x65, 0x72, 0x12, 0x19, 0x2e,
-	0x70, 0x70, 0x6c, 0x6f, 0x67, 0x67, 0x65, 0x72, 0x2e, 0x43, 0x6f, 0x6e, 0x73, 0x75, 0x6d, 0x65,
-	0x72, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x12, 0x2e, 0x70, 0x70, 0x6c, 0x6f, 0x67,
-	0x67, 0x65, 0x72, 0x2e, 0x43, 0x6f, 0x6e, 0x73, 0x75, 0x6d, 0x65, 0x72, 0x22, 0x00, 0x12, 0x41,
-	0x0a, 0x0e, 0x44, 0x65, 0x6c, 0x65, 0x74, 0x65, 0x43, 0x6f, 0x6e, 0x73, 0x75, 0x6d, 0x65, 0x72,
-	0x12, 0x19, 0x2e, 0x70, 0x70, 0x6c, 0x6f, 0x67, 0x67, 0x65, 0x72, 0x2e, 0x43, 0x6f, 0x6e, 0x73,
-	0x75, 0x6d, 0x65, 0x72, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x12, 0x2e, 0x70, 0x70,
-	0x6c, 0x6f, 0x67, 0x67, 0x65, 0x72, 0x2e, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22,
-	0x00, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
+	0x65, 0x70, 0x6c, 0x79, 0x32, 0x8c, 0x02, 0x0a, 0x0f, 0x43, 0x6f, 0x6e, 0x73, 0x75, 0x6d, 0x65,
+	0x72, 0x53, 0x65, 0x72, 0x76, 0x69, 0x63, 0x65, 0x12, 0x3a, 0x0a, 0x0e, 0x43, 0x72, 0x65, 0x61,
+	0x74, 0x65, 0x43, 0x6f, 0x6e, 0x73, 0x75, 0x6d, 0x65, 0x72, 0x12, 0x12, 0x2e, 0x70, 0x70, 0x6c,
+	0x6f, 0x67, 0x67, 0x65, 0x72, 0x2e, 0x43, 0x6f, 0x6e, 0x73, 0x75, 0x6d, 0x65, 0x72, 0x1a, 0x12,
+	0x2e, 0x70, 0x70, 0x6c, 0x6f, 0x67, 0x67, 0x65, 0x72, 0x2e, 0x43, 0x6f, 0x6e, 0x73, 0x75, 0x6d,
+	0x65, 0x72, 0x22, 0x00, 0x12, 0x3a, 0x0a, 0x0e, 0x55, 0x70, 0x64, 0x61, 0x74, 0x65, 0x43, 0x6f,
+	0x6e, 0x73, 0x75, 0x6d, 0x65, 0x72, 0x12, 0x12, 0x2e, 0x70, 0x70, 0x6c, 0x6f, 0x67, 0x67, 0x65,
+	0x72, 0x2e, 0x43, 0x6f, 0x6e, 0x73, 0x75, 0x6d, 0x65, 0x72, 0x1a, 0x12, 0x2e, 0x70, 0x70, 0x6c,
+	0x6f, 0x67, 0x67, 0x65, 0x72, 0x2e, 0x43, 0x6f, 0x6e, 0x73, 0x75, 0x6d, 0x65, 0x72, 0x22, 0x00,
+	0x12, 0x3e, 0x0a, 0x0b, 0x47, 0x65, 0x74, 0x43, 0x6f, 0x6e, 0x73, 0x75, 0x6d, 0x65, 0x72, 0x12,
+	0x19, 0x2e, 0x70, 0x70, 0x6c, 0x6f, 0x67, 0x67, 0x65, 0x72, 0x2e, 0x43, 0x6f, 0x6e, 0x73, 0x75,
+	0x6d, 0x65, 0x72, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x12, 0x2e, 0x70, 0x70, 0x6c,
+	0x6f, 0x67, 0x67, 0x65, 0x72, 0x2e, 0x43, 0x6f, 0x6e, 0x73, 0x75, 0x6d, 0x65, 0x72, 0x22, 0x00,
+	0x12, 0x41, 0x0a, 0x0e, 0x44, 0x65, 0x6c, 0x65, 0x74, 0x65, 0x43, 0x6f, 0x6e, 0x73, 0x75, 0x6d,
+	0x65, 0x72, 0x12, 0x19, 0x2e, 0x70, 0x70, 0x6c, 0x6f, 0x67, 0x67, 0x65, 0x72, 0x2e, 0x43, 0x6f,
+	0x6e, 0x73, 0x75, 0x6d, 0x65, 0x72, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x12, 0x2e,
+	0x70, 0x70, 0x6c, 0x6f, 0x67, 0x67, 0x65, 0x72, 0x2e, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73,
+	0x65, 0x22, 0x00, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
 
 var (
@@ -313,14 +313,14 @@ var file_ppconsumer_proto_goTypes = []interface{}{
 }
 var file_ppconsumer_proto_depIdxs = []int32{
 	1, // 0: pplogger.Consumer.installations:type_name -> pplogger.Installation
-	0, // 1: pplogger.LoggerService.CreateConsumer:input_type -> pplogger.Consumer
-	0, // 2: pplogger.LoggerService.UpdateConsumer:input_type -> pplogger.Consumer
-	2, // 3: pplogger.LoggerService.GetConsumer:input_type -> pplogger.ConsumerRequest
-	2, // 4: pplogger.LoggerService.DeleteConsumer:input_type -> pplogger.ConsumerRequest
-	0, // 5: pplogger.LoggerService.CreateConsumer:output_type -> pplogger.Consumer
-	0, // 6: pplogger.LoggerService.UpdateConsumer:output_type -> pplogger.Consumer
-	0, // 7: pplogger.LoggerService.GetConsumer:output_type -> pplogger.Consumer
-	3, // 8: pplogger.LoggerService.DeleteConsumer:output_type -> pplogger.Response
+	0, // 1: pplogger.ConsumerService.CreateConsumer:input_type -> pplogger.Consumer
+	0, // 2: pplogger.ConsumerService.UpdateConsumer:input_type -> pplogger.Consumer
+	2, // 3: pplogger.ConsumerService.GetConsumer:input_type -> pplogger.ConsumerRequest
+	2, // 4: pplogger.ConsumerService.DeleteConsumer:input_type -> pplogger.ConsumerRequest
+	0, // 5: pplogger.ConsumerService.CreateConsumer:output_type -> pplogger.Consumer
+	0, // 6: pplogger.ConsumerService.UpdateConsumer:output_type -> pplogger.Consumer
+	0, // 7: pplogger.ConsumerService.GetConsumer:output_type -> pplogger.Consumer
+	3, // 8: pplogger.ConsumerService.DeleteConsumer:output_type -> pplogger.Response
 	5, // [5:9] is the sub-list for method output_type
 	1, // [1:5] is the sub-list for method input_type
 	1, // [1:1] is the sub-list for extension type_name
@@ -411,180 +411,180 @@ var _ grpc.ClientConnInterface
 // is compatible with the grpc package it is being compiled against.
 const _ = grpc.SupportPackageIsVersion6
 
-// LoggerServiceClient is the client API for LoggerService service.
+// ConsumerServiceClient is the client API for ConsumerService service.
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
-type LoggerServiceClient interface {
+type ConsumerServiceClient interface {
 	CreateConsumer(ctx context.Context, in *Consumer, opts ...grpc.CallOption) (*Consumer, error)
 	UpdateConsumer(ctx context.Context, in *Consumer, opts ...grpc.CallOption) (*Consumer, error)
 	GetConsumer(ctx context.Context, in *ConsumerRequest, opts ...grpc.CallOption) (*Consumer, error)
 	DeleteConsumer(ctx context.Context, in *ConsumerRequest, opts ...grpc.CallOption) (*Response, error)
 }
 
-type loggerServiceClient struct {
+type consumerServiceClient struct {
 	cc grpc.ClientConnInterface
 }
 
-func NewLoggerServiceClient(cc grpc.ClientConnInterface) LoggerServiceClient {
-	return &loggerServiceClient{cc}
+func NewConsumerServiceClient(cc grpc.ClientConnInterface) ConsumerServiceClient {
+	return &consumerServiceClient{cc}
 }
 
-func (c *loggerServiceClient) CreateConsumer(ctx context.Context, in *Consumer, opts ...grpc.CallOption) (*Consumer, error) {
+func (c *consumerServiceClient) CreateConsumer(ctx context.Context, in *Consumer, opts ...grpc.CallOption) (*Consumer, error) {
 	out := new(Consumer)
-	err := c.cc.Invoke(ctx, "/pplogger.LoggerService/CreateConsumer", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/pplogger.ConsumerService/CreateConsumer", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
 	return out, nil
 }
 
-func (c *loggerServiceClient) UpdateConsumer(ctx context.Context, in *Consumer, opts ...grpc.CallOption) (*Consumer, error) {
+func (c *consumerServiceClient) UpdateConsumer(ctx context.Context, in *Consumer, opts ...grpc.CallOption) (*Consumer, error) {
 	out := new(Consumer)
-	err := c.cc.Invoke(ctx, "/pplogger.LoggerService/UpdateConsumer", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/pplogger.ConsumerService/UpdateConsumer", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
 	return out, nil
 }
 
-func (c *loggerServiceClient) GetConsumer(ctx context.Context, in *ConsumerRequest, opts ...grpc.CallOption) (*Consumer, error) {
+func (c *consumerServiceClient) GetConsumer(ctx context.Context, in *ConsumerRequest, opts ...grpc.CallOption) (*Consumer, error) {
 	out := new(Consumer)
-	err := c.cc.Invoke(ctx, "/pplogger.LoggerService/GetConsumer", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/pplogger.ConsumerService/GetConsumer", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
 	return out, nil
 }
 
-func (c *loggerServiceClient) DeleteConsumer(ctx context.Context, in *ConsumerRequest, opts ...grpc.CallOption) (*Response, error) {
+func (c *consumerServiceClient) DeleteConsumer(ctx context.Context, in *ConsumerRequest, opts ...grpc.CallOption) (*Response, error) {
 	out := new(Response)
-	err := c.cc.Invoke(ctx, "/pplogger.LoggerService/DeleteConsumer", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/pplogger.ConsumerService/DeleteConsumer", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
 	return out, nil
 }
 
-// LoggerServiceServer is the server API for LoggerService service.
-type LoggerServiceServer interface {
+// ConsumerServiceServer is the server API for ConsumerService service.
+type ConsumerServiceServer interface {
 	CreateConsumer(context.Context, *Consumer) (*Consumer, error)
 	UpdateConsumer(context.Context, *Consumer) (*Consumer, error)
 	GetConsumer(context.Context, *ConsumerRequest) (*Consumer, error)
 	DeleteConsumer(context.Context, *ConsumerRequest) (*Response, error)
 }
 
-// UnimplementedLoggerServiceServer can be embedded to have forward compatible implementations.
-type UnimplementedLoggerServiceServer struct {
+// UnimplementedConsumerServiceServer can be embedded to have forward compatible implementations.
+type UnimplementedConsumerServiceServer struct {
 }
 
-func (*UnimplementedLoggerServiceServer) CreateConsumer(context.Context, *Consumer) (*Consumer, error) {
+func (*UnimplementedConsumerServiceServer) CreateConsumer(context.Context, *Consumer) (*Consumer, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method CreateConsumer not implemented")
 }
-func (*UnimplementedLoggerServiceServer) UpdateConsumer(context.Context, *Consumer) (*Consumer, error) {
+func (*UnimplementedConsumerServiceServer) UpdateConsumer(context.Context, *Consumer) (*Consumer, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method UpdateConsumer not implemented")
 }
-func (*UnimplementedLoggerServiceServer) GetConsumer(context.Context, *ConsumerRequest) (*Consumer, error) {
+func (*UnimplementedConsumerServiceServer) GetConsumer(context.Context, *ConsumerRequest) (*Consumer, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetConsumer not implemented")
 }
-func (*UnimplementedLoggerServiceServer) DeleteConsumer(context.Context, *ConsumerRequest) (*Response, error) {
+func (*UnimplementedConsumerServiceServer) DeleteConsumer(context.Context, *ConsumerRequest) (*Response, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method DeleteConsumer not implemented")
 }
 
-func RegisterLoggerServiceServer(s *grpc.Server, srv LoggerServiceServer) {
-	s.RegisterService(&_LoggerService_serviceDesc, srv)
+func RegisterConsumerServiceServer(s *grpc.Server, srv ConsumerServiceServer) {
+	s.RegisterService(&_ConsumerService_serviceDesc, srv)
 }
 
-func _LoggerService_CreateConsumer_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+func _ConsumerService_CreateConsumer_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(Consumer)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(LoggerServiceServer).CreateConsumer(ctx, in)
+		return srv.(ConsumerServiceServer).CreateConsumer(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/pplogger.LoggerService/CreateConsumer",
+		FullMethod: "/pplogger.ConsumerService/CreateConsumer",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(LoggerServiceServer).CreateConsumer(ctx, req.(*Consumer))
+		return srv.(ConsumerServiceServer).CreateConsumer(ctx, req.(*Consumer))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
-func _LoggerService_UpdateConsumer_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+func _ConsumerService_UpdateConsumer_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(Consumer)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(LoggerServiceServer).UpdateConsumer(ctx, in)
+		return srv.(ConsumerServiceServer).UpdateConsumer(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/pplogger.LoggerService/UpdateConsumer",
+		FullMethod: "/pplogger.ConsumerService/UpdateConsumer",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(LoggerServiceServer).UpdateConsumer(ctx, req.(*Consumer))
+		return srv.(ConsumerServiceServer).UpdateConsumer(ctx, req.(*Consumer))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
-func _LoggerService_GetConsumer_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+func _ConsumerService_GetConsumer_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(ConsumerRequest)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(LoggerServiceServer).GetConsumer(ctx, in)
+		return srv.(ConsumerServiceServer).GetConsumer(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/pplogger.LoggerService/GetConsumer",
+		FullMethod: "/pplogger.ConsumerService/GetConsumer",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(LoggerServiceServer).GetConsumer(ctx, req.(*ConsumerRequest))
+		return srv.(ConsumerServiceServer).GetConsumer(ctx, req.(*ConsumerRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
-func _LoggerService_DeleteConsumer_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+func _ConsumerService_DeleteConsumer_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(ConsumerRequest)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(LoggerServiceServer).DeleteConsumer(ctx, in)
+		return srv.(ConsumerServiceServer).DeleteConsumer(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/pplogger.LoggerService/DeleteConsumer",
+		FullMethod: "/pplogger.ConsumerService/DeleteConsumer",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(LoggerServiceServer).DeleteConsumer(ctx, req.(*ConsumerRequest))
+		return srv.(ConsumerServiceServer).DeleteConsumer(ctx, req.(*ConsumerRequest))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
-var _LoggerService_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "pplogger.LoggerService",
-	HandlerType: (*LoggerServiceServer)(nil),
+var _ConsumerService_serviceDesc = grpc.ServiceDesc{
+	ServiceName: "pplogger.ConsumerService",
+	HandlerType: (*ConsumerServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
 			MethodName: "CreateConsumer",
-			Handler:    _LoggerService_CreateConsumer_Handler,
+			Handler:    _ConsumerService_CreateConsumer_Handler,
 		},
 		{
 			MethodName: "UpdateConsumer",
-			Handler:    _LoggerService_UpdateConsumer_Handler,
+			Handler:    _ConsumerService_UpdateConsumer_Handler,
 		},
 		{
 			MethodName: "GetConsumer",
-			Handler:    _LoggerService_GetConsumer_Handler,
+			Handler:    _ConsumerService_GetConsumer_Handler,
 		},
 		{
 			MethodName: "DeleteConsumer",
-			Handler:    _LoggerService_DeleteConsumer_Handler,
+			Handler:    _ConsumerService_DeleteConsumer_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},

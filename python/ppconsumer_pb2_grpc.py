@@ -4,7 +4,7 @@ import grpc
 import ppconsumer_pb2 as ppconsumer__pb2
 
 
-class LoggerServiceStub(object):
+class ConsumerServiceStub(object):
   # missing associated documentation comment in .proto file
   pass
 
@@ -15,28 +15,28 @@ class LoggerServiceStub(object):
       channel: A grpc.Channel.
     """
     self.CreateConsumer = channel.unary_unary(
-        '/pplogger.LoggerService/CreateConsumer',
+        '/pplogger.ConsumerService/CreateConsumer',
         request_serializer=ppconsumer__pb2.Consumer.SerializeToString,
         response_deserializer=ppconsumer__pb2.Consumer.FromString,
         )
     self.UpdateConsumer = channel.unary_unary(
-        '/pplogger.LoggerService/UpdateConsumer',
+        '/pplogger.ConsumerService/UpdateConsumer',
         request_serializer=ppconsumer__pb2.Consumer.SerializeToString,
         response_deserializer=ppconsumer__pb2.Consumer.FromString,
         )
     self.GetConsumer = channel.unary_unary(
-        '/pplogger.LoggerService/GetConsumer',
+        '/pplogger.ConsumerService/GetConsumer',
         request_serializer=ppconsumer__pb2.ConsumerRequest.SerializeToString,
         response_deserializer=ppconsumer__pb2.Consumer.FromString,
         )
     self.DeleteConsumer = channel.unary_unary(
-        '/pplogger.LoggerService/DeleteConsumer',
+        '/pplogger.ConsumerService/DeleteConsumer',
         request_serializer=ppconsumer__pb2.ConsumerRequest.SerializeToString,
         response_deserializer=ppconsumer__pb2.Response.FromString,
         )
 
 
-class LoggerServiceServicer(object):
+class ConsumerServiceServicer(object):
   # missing associated documentation comment in .proto file
   pass
 
@@ -69,7 +69,7 @@ class LoggerServiceServicer(object):
     raise NotImplementedError('Method not implemented!')
 
 
-def add_LoggerServiceServicer_to_server(servicer, server):
+def add_ConsumerServiceServicer_to_server(servicer, server):
   rpc_method_handlers = {
       'CreateConsumer': grpc.unary_unary_rpc_method_handler(
           servicer.CreateConsumer,
@@ -93,5 +93,5 @@ def add_LoggerServiceServicer_to_server(servicer, server):
       ),
   }
   generic_handler = grpc.method_handlers_generic_handler(
-      'pplogger.LoggerService', rpc_method_handlers)
+      'pplogger.ConsumerService', rpc_method_handlers)
   server.add_generic_rpc_handlers((generic_handler,))
