@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package pplogger;
+package ppconsumer;
 
 message Consumer {
   int32 id = 1;

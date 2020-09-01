@@ -1,5 +1,5 @@
 /**
- * @fileoverview gRPC-Web generated client stub for pplogger
+ * @fileoverview gRPC-Web generated client stub for ppconsumer
  * @enhanceable
  * @public
  */
@@ -12,7 +12,7 @@ const grpc = {};
 grpc.web = require('grpc-web');
 
 const proto = {};
-proto.pplogger = require('./ppconsumer_pb.js');
+proto.ppconsumer = require('./ppconsumer_pb.js');
 
 /**
  * @param {string} hostname
@@ -22,7 +22,7 @@ proto.pplogger = require('./ppconsumer_pb.js');
  * @struct
  * @final
  */
-proto.pplogger.ConsumerServiceClient =
+proto.ppconsumer.ConsumerServiceClient =
     function(hostname, credentials, options) {
   if (!options) options = {};
   options['format'] = 'text';
@@ -48,7 +48,7 @@ proto.pplogger.ConsumerServiceClient =
  * @struct
  * @final
  */
-proto.pplogger.ConsumerServicePromiseClient =
+proto.ppconsumer.ConsumerServicePromiseClient =
     function(hostname, credentials, options) {
   if (!options) options = {};
   options['format'] = 'text';
@@ -69,58 +69,58 @@ proto.pplogger.ConsumerServicePromiseClient =
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
- *   !proto.pplogger.Consumer,
- *   !proto.pplogger.Consumer>}
+ *   !proto.ppconsumer.Consumer,
+ *   !proto.ppconsumer.Consumer>}
  */
 const methodDescriptor_ConsumerService_CreateConsumer = new grpc.web.MethodDescriptor(
-  '/pplogger.ConsumerService/CreateConsumer',
+  '/ppconsumer.ConsumerService/CreateConsumer',
   grpc.web.MethodType.UNARY,
-  proto.pplogger.Consumer,
-  proto.pplogger.Consumer,
+  proto.ppconsumer.Consumer,
+  proto.ppconsumer.Consumer,
   /**
-   * @param {!proto.pplogger.Consumer} request
+   * @param {!proto.ppconsumer.Consumer} request
    * @return {!Uint8Array}
    */
   function(request) {
     return request.serializeBinary();
   },
-  proto.pplogger.Consumer.deserializeBinary
+  proto.ppconsumer.Consumer.deserializeBinary
 );
 
 
 /**
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.pplogger.Consumer,
- *   !proto.pplogger.Consumer>}
+ *   !proto.ppconsumer.Consumer,
+ *   !proto.ppconsumer.Consumer>}
  */
 const methodInfo_ConsumerService_CreateConsumer = new grpc.web.AbstractClientBase.MethodInfo(
-  proto.pplogger.Consumer,
+  proto.ppconsumer.Consumer,
   /**
-   * @param {!proto.pplogger.Consumer} request
+   * @param {!proto.ppconsumer.Consumer} request
    * @return {!Uint8Array}
    */
   function(request) {
     return request.serializeBinary();
   },
-  proto.pplogger.Consumer.deserializeBinary
+  proto.ppconsumer.Consumer.deserializeBinary
 );
 
 
 /**
- * @param {!proto.pplogger.Consumer} request The
+ * @param {!proto.ppconsumer.Consumer} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @param {function(?grpc.web.Error, ?proto.pplogger.Consumer)}
+ * @param {function(?grpc.web.Error, ?proto.ppconsumer.Consumer)}
  *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.pplogger.Consumer>|undefined}
+ * @return {!grpc.web.ClientReadableStream<!proto.ppconsumer.Consumer>|undefined}
  *     The XHR Node Readable Stream
  */
-proto.pplogger.ConsumerServiceClient.prototype.createConsumer =
+proto.ppconsumer.ConsumerServiceClient.prototype.createConsumer =
     function(request, metadata, callback) {
   return this.client_.rpcCall(this.hostname_ +
-      '/pplogger.ConsumerService/CreateConsumer',
+      '/ppconsumer.ConsumerService/CreateConsumer',
       request,
       metadata || {},
       methodDescriptor_ConsumerService_CreateConsumer,
@@ -129,17 +129,17 @@ proto.pplogger.ConsumerServiceClient.prototype.createConsumer =
 
 
 /**
- * @param {!proto.pplogger.Consumer} request The
+ * @param {!proto.ppconsumer.Consumer} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @return {!Promise<!proto.pplogger.Consumer>}
+ * @return {!Promise<!proto.ppconsumer.Consumer>}
  *     A native promise that resolves to the response
  */
-proto.pplogger.ConsumerServicePromiseClient.prototype.createConsumer =
+proto.ppconsumer.ConsumerServicePromiseClient.prototype.createConsumer =
     function(request, metadata) {
   return this.client_.unaryCall(this.hostname_ +
-      '/pplogger.ConsumerService/CreateConsumer',
+      '/ppconsumer.ConsumerService/CreateConsumer',
       request,
       metadata || {},
       methodDescriptor_ConsumerService_CreateConsumer);
@@ -149,58 +149,58 @@ proto.pplogger.ConsumerServicePromiseClient.prototype.createConsumer =
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
- *   !proto.pplogger.Consumer,
- *   !proto.pplogger.Consumer>}
+ *   !proto.ppconsumer.Consumer,
+ *   !proto.ppconsumer.Consumer>}
  */
 const methodDescriptor_ConsumerService_UpdateConsumer = new grpc.web.MethodDescriptor(
-  '/pplogger.ConsumerService/UpdateConsumer',
+  '/ppconsumer.ConsumerService/UpdateConsumer',
   grpc.web.MethodType.UNARY,
-  proto.pplogger.Consumer,
-  proto.pplogger.Consumer,
+  proto.ppconsumer.Consumer,
+  proto.ppconsumer.Consumer,
   /**
-   * @param {!proto.pplogger.Consumer} request
+   * @param {!proto.ppconsumer.Consumer} request
    * @return {!Uint8Array}
    */
   function(request) {
     return request.serializeBinary();
   },
-  proto.pplogger.Consumer.deserializeBinary
+  proto.ppconsumer.Consumer.deserializeBinary
 );
 
 
 /**
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.pplogger.Consumer,
- *   !proto.pplogger.Consumer>}
+ *   !proto.ppconsumer.Consumer,
+ *   !proto.ppconsumer.Consumer>}
  */
 const methodInfo_ConsumerService_UpdateConsumer = new grpc.web.AbstractClientBase.MethodInfo(
-  proto.pplogger.Consumer,
+  proto.ppconsumer.Consumer,
   /**
-   * @param {!proto.pplogger.Consumer} request
+   * @param {!proto.ppconsumer.Consumer} request
    * @return {!Uint8Array}
    */
   function(request) {
     return request.serializeBinary();
   },
-  proto.pplogger.Consumer.deserializeBinary
+  proto.ppconsumer.Consumer.deserializeBinary
 );
 
 
 /**
- * @param {!proto.pplogger.Consumer} request The
+ * @param {!proto.ppconsumer.Consumer} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @param {function(?grpc.web.Error, ?proto.pplogger.Consumer)}
+ * @param {function(?grpc.web.Error, ?proto.ppconsumer.Consumer)}
  *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.pplogger.Consumer>|undefined}
+ * @return {!grpc.web.ClientReadableStream<!proto.ppconsumer.Consumer>|undefined}
  *     The XHR Node Readable Stream
  */
-proto.pplogger.ConsumerServiceClient.prototype.updateConsumer =
+proto.ppconsumer.ConsumerServiceClient.prototype.updateConsumer =
     function(request, metadata, callback) {
   return this.client_.rpcCall(this.hostname_ +
-      '/pplogger.ConsumerService/UpdateConsumer',
+      '/ppconsumer.ConsumerService/UpdateConsumer',
       request,
       metadata || {},
       methodDescriptor_ConsumerService_UpdateConsumer,
@@ -209,17 +209,17 @@ proto.pplogger.ConsumerServiceClient.prototype.updateConsumer =
 
 
 /**
- * @param {!proto.pplogger.Consumer} request The
+ * @param {!proto.ppconsumer.Consumer} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @return {!Promise<!proto.pplogger.Consumer>}
+ * @return {!Promise<!proto.ppconsumer.Consumer>}
  *     A native promise that resolves to the response
  */
-proto.pplogger.ConsumerServicePromiseClient.prototype.updateConsumer =
+proto.ppconsumer.ConsumerServicePromiseClient.prototype.updateConsumer =
     function(request, metadata) {
   return this.client_.unaryCall(this.hostname_ +
-      '/pplogger.ConsumerService/UpdateConsumer',
+      '/ppconsumer.ConsumerService/UpdateConsumer',
       request,
       metadata || {},
       methodDescriptor_ConsumerService_UpdateConsumer);
@@ -229,58 +229,58 @@ proto.pplogger.ConsumerServicePromiseClient.prototype.updateConsumer =
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
- *   !proto.pplogger.ConsumerRequest,
- *   !proto.pplogger.Consumer>}
+ *   !proto.ppconsumer.ConsumerRequest,
+ *   !proto.ppconsumer.Consumer>}
  */
 const methodDescriptor_ConsumerService_GetConsumer = new grpc.web.MethodDescriptor(
-  '/pplogger.ConsumerService/GetConsumer',
+  '/ppconsumer.ConsumerService/GetConsumer',
   grpc.web.MethodType.UNARY,
-  proto.pplogger.ConsumerRequest,
-  proto.pplogger.Consumer,
+  proto.ppconsumer.ConsumerRequest,
+  proto.ppconsumer.Consumer,
   /**
-   * @param {!proto.pplogger.ConsumerRequest} request
+   * @param {!proto.ppconsumer.ConsumerRequest} request
    * @return {!Uint8Array}
    */
   function(request) {
     return request.serializeBinary();
   },
-  proto.pplogger.Consumer.deserializeBinary
+  proto.ppconsumer.Consumer.deserializeBinary
 );
 
 
 /**
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.pplogger.ConsumerRequest,
- *   !proto.pplogger.Consumer>}
+ *   !proto.ppconsumer.ConsumerRequest,
+ *   !proto.ppconsumer.Consumer>}
  */
 const methodInfo_ConsumerService_GetConsumer = new grpc.web.AbstractClientBase.MethodInfo(
-  proto.pplogger.Consumer,
+  proto.ppconsumer.Consumer,
   /**
-   * @param {!proto.pplogger.ConsumerRequest} request
+   * @param {!proto.ppconsumer.ConsumerRequest} request
    * @return {!Uint8Array}
    */
   function(request) {
     return request.serializeBinary();
   },
-  proto.pplogger.Consumer.deserializeBinary
+  proto.ppconsumer.Consumer.deserializeBinary
 );
 
 
 /**
- * @param {!proto.pplogger.ConsumerRequest} request The
+ * @param {!proto.ppconsumer.ConsumerRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @param {function(?grpc.web.Error, ?proto.pplogger.Consumer)}
+ * @param {function(?grpc.web.Error, ?proto.ppconsumer.Consumer)}
  *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.pplogger.Consumer>|undefined}
+ * @return {!grpc.web.ClientReadableStream<!proto.ppconsumer.Consumer>|undefined}
  *     The XHR Node Readable Stream
  */
-proto.pplogger.ConsumerServiceClient.prototype.getConsumer =
+proto.ppconsumer.ConsumerServiceClient.prototype.getConsumer =
     function(request, metadata, callback) {
   return this.client_.rpcCall(this.hostname_ +
-      '/pplogger.ConsumerService/GetConsumer',
+      '/ppconsumer.ConsumerService/GetConsumer',
       request,
       metadata || {},
       methodDescriptor_ConsumerService_GetConsumer,
@@ -289,17 +289,17 @@ proto.pplogger.ConsumerServiceClient.prototype.getConsumer =
 
 
 /**
- * @param {!proto.pplogger.ConsumerRequest} request The
+ * @param {!proto.ppconsumer.ConsumerRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @return {!Promise<!proto.pplogger.Consumer>}
+ * @return {!Promise<!proto.ppconsumer.Consumer>}
  *     A native promise that resolves to the response
  */
-proto.pplogger.ConsumerServicePromiseClient.prototype.getConsumer =
+proto.ppconsumer.ConsumerServicePromiseClient.prototype.getConsumer =
     function(request, metadata) {
   return this.client_.unaryCall(this.hostname_ +
-      '/pplogger.ConsumerService/GetConsumer',
+      '/ppconsumer.ConsumerService/GetConsumer',
       request,
       metadata || {},
       methodDescriptor_ConsumerService_GetConsumer);
@@ -309,58 +309,58 @@ proto.pplogger.ConsumerServicePromiseClient.prototype.getConsumer =
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
- *   !proto.pplogger.ConsumerRequest,
- *   !proto.pplogger.Response>}
+ *   !proto.ppconsumer.ConsumerRequest,
+ *   !proto.ppconsumer.Response>}
  */
 const methodDescriptor_ConsumerService_DeleteConsumer = new grpc.web.MethodDescriptor(
-  '/pplogger.ConsumerService/DeleteConsumer',
+  '/ppconsumer.ConsumerService/DeleteConsumer',
   grpc.web.MethodType.UNARY,
-  proto.pplogger.ConsumerRequest,
-  proto.pplogger.Response,
+  proto.ppconsumer.ConsumerRequest,
+  proto.ppconsumer.Response,
   /**
-   * @param {!proto.pplogger.ConsumerRequest} request
+   * @param {!proto.ppconsumer.ConsumerRequest} request
    * @return {!Uint8Array}
    */
   function(request) {
     return request.serializeBinary();
   },
-  proto.pplogger.Response.deserializeBinary
+  proto.ppconsumer.Response.deserializeBinary
 );
 
 
 /**
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.pplogger.ConsumerRequest,
- *   !proto.pplogger.Response>}
+ *   !proto.ppconsumer.ConsumerRequest,
+ *   !proto.ppconsumer.Response>}
  */
 const methodInfo_ConsumerService_DeleteConsumer = new grpc.web.AbstractClientBase.MethodInfo(
-  proto.pplogger.Response,
+  proto.ppconsumer.Response,
   /**
-   * @param {!proto.pplogger.ConsumerRequest} request
+   * @param {!proto.ppconsumer.ConsumerRequest} request
    * @return {!Uint8Array}
    */
   function(request) {
     return request.serializeBinary();
   },
-  proto.pplogger.Response.deserializeBinary
+  proto.ppconsumer.Response.deserializeBinary
 );
 
 
 /**
- * @param {!proto.pplogger.ConsumerRequest} request The
+ * @param {!proto.ppconsumer.ConsumerRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @param {function(?grpc.web.Error, ?proto.pplogger.Response)}
+ * @param {function(?grpc.web.Error, ?proto.ppconsumer.Response)}
  *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.pplogger.Response>|undefined}
+ * @return {!grpc.web.ClientReadableStream<!proto.ppconsumer.Response>|undefined}
  *     The XHR Node Readable Stream
  */
-proto.pplogger.ConsumerServiceClient.prototype.deleteConsumer =
+proto.ppconsumer.ConsumerServiceClient.prototype.deleteConsumer =
     function(request, metadata, callback) {
   return this.client_.rpcCall(this.hostname_ +
-      '/pplogger.ConsumerService/DeleteConsumer',
+      '/ppconsumer.ConsumerService/DeleteConsumer',
       request,
       metadata || {},
       methodDescriptor_ConsumerService_DeleteConsumer,
@@ -369,22 +369,22 @@ proto.pplogger.ConsumerServiceClient.prototype.deleteConsumer =
 
 
 /**
- * @param {!proto.pplogger.ConsumerRequest} request The
+ * @param {!proto.ppconsumer.ConsumerRequest} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @return {!Promise<!proto.pplogger.Response>}
+ * @return {!Promise<!proto.ppconsumer.Response>}
  *     A native promise that resolves to the response
  */
-proto.pplogger.ConsumerServicePromiseClient.prototype.deleteConsumer =
+proto.ppconsumer.ConsumerServicePromiseClient.prototype.deleteConsumer =
     function(request, metadata) {
   return this.client_.unaryCall(this.hostname_ +
-      '/pplogger.ConsumerService/DeleteConsumer',
+      '/ppconsumer.ConsumerService/DeleteConsumer',
       request,
       metadata || {},
       methodDescriptor_ConsumerService_DeleteConsumer);
 };
 
 
-module.exports = proto.pplogger;
+module.exports = proto.ppconsumer;
 

@@ -15,22 +15,22 @@ class ConsumerServiceStub(object):
       channel: A grpc.Channel.
     """
     self.CreateConsumer = channel.unary_unary(
-        '/pplogger.ConsumerService/CreateConsumer',
+        '/ppconsumer.ConsumerService/CreateConsumer',
         request_serializer=ppconsumer__pb2.Consumer.SerializeToString,
         response_deserializer=ppconsumer__pb2.Consumer.FromString,
         )
     self.UpdateConsumer = channel.unary_unary(
-        '/pplogger.ConsumerService/UpdateConsumer',
+        '/ppconsumer.ConsumerService/UpdateConsumer',
         request_serializer=ppconsumer__pb2.Consumer.SerializeToString,
         response_deserializer=ppconsumer__pb2.Consumer.FromString,
         )
     self.GetConsumer = channel.unary_unary(
-        '/pplogger.ConsumerService/GetConsumer',
+        '/ppconsumer.ConsumerService/GetConsumer',
         request_serializer=ppconsumer__pb2.ConsumerRequest.SerializeToString,
         response_deserializer=ppconsumer__pb2.Consumer.FromString,
         )
     self.DeleteConsumer = channel.unary_unary(
-        '/pplogger.ConsumerService/DeleteConsumer',
+        '/ppconsumer.ConsumerService/DeleteConsumer',
         request_serializer=ppconsumer__pb2.ConsumerRequest.SerializeToString,
         response_deserializer=ppconsumer__pb2.Response.FromString,
         )
@@ -93,5 +93,5 @@ def add_ConsumerServiceServicer_to_server(servicer, server):
       ),
   }
   generic_handler = grpc.method_handlers_generic_handler(
-      'pplogger.ConsumerService', rpc_method_handlers)
+      'ppconsumer.ConsumerService', rpc_method_handlers)
   server.add_generic_rpc_handlers((generic_handler,))

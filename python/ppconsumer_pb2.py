@@ -17,10 +17,10 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='ppconsumer.proto',
-  package='pplogger',
+  package='ppconsumer',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n\x10ppconsumer.proto\x12\x08pplogger\"f\n\x08\x43onsumer\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x10\n\x08username\x18\x02 \x01(\t\x12\r\n\x05\x65mail\x18\x03 \x01(\t\x12-\n\rinstallations\x18\x04 \x03(\x0b\x32\x16.pplogger.Installation\"3\n\x0cInstallation\x12\x10\n\x08IDNumber\x18\x01 \x01(\t\x12\x11\n\tdeviceEUI\x18\x02 \x03(\t\"#\n\x0f\x43onsumerRequest\x12\x10\n\x08username\x18\x01 \x01(\t\"\x19\n\x08Response\x12\r\n\x05reply\x18\x01 \x01(\t2\x8c\x02\n\x0f\x43onsumerService\x12:\n\x0e\x43reateConsumer\x12\x12.pplogger.Consumer\x1a\x12.pplogger.Consumer\"\x00\x12:\n\x0eUpdateConsumer\x12\x12.pplogger.Consumer\x1a\x12.pplogger.Consumer\"\x00\x12>\n\x0bGetConsumer\x12\x19.pplogger.ConsumerRequest\x1a\x12.pplogger.Consumer\"\x00\x12\x41\n\x0e\x44\x65leteConsumer\x12\x19.pplogger.ConsumerRequest\x1a\x12.pplogger.Response\"\x00\x62\x06proto3')
+  serialized_pb=_b('\n\x10ppconsumer.proto\x12\nppconsumer\"h\n\x08\x43onsumer\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x10\n\x08username\x18\x02 \x01(\t\x12\r\n\x05\x65mail\x18\x03 \x01(\t\x12/\n\rinstallations\x18\x04 \x03(\x0b\x32\x18.ppconsumer.Installation\"3\n\x0cInstallation\x12\x10\n\x08IDNumber\x18\x01 \x01(\t\x12\x11\n\tdeviceEUI\x18\x02 \x03(\t\"#\n\x0f\x43onsumerRequest\x12\x10\n\x08username\x18\x01 \x01(\t\"\x19\n\x08Response\x12\r\n\x05reply\x18\x01 \x01(\t2\x9c\x02\n\x0f\x43onsumerService\x12>\n\x0e\x43reateConsumer\x12\x14.ppconsumer.Consumer\x1a\x14.ppconsumer.Consumer\"\x00\x12>\n\x0eUpdateConsumer\x12\x14.ppconsumer.Consumer\x1a\x14.ppconsumer.Consumer\"\x00\x12\x42\n\x0bGetConsumer\x12\x1b.ppconsumer.ConsumerRequest\x1a\x14.ppconsumer.Consumer\"\x00\x12\x45\n\x0e\x44\x65leteConsumer\x12\x1b.ppconsumer.ConsumerRequest\x1a\x14.ppconsumer.Response\"\x00\x62\x06proto3')
 )
 
 
@@ -28,34 +28,34 @@ DESCRIPTOR = _descriptor.FileDescriptor(
 
 _CONSUMER = _descriptor.Descriptor(
   name='Consumer',
-  full_name='pplogger.Consumer',
+  full_name='ppconsumer.Consumer',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='id', full_name='pplogger.Consumer.id', index=0,
+      name='id', full_name='ppconsumer.Consumer.id', index=0,
       number=1, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='username', full_name='pplogger.Consumer.username', index=1,
+      name='username', full_name='ppconsumer.Consumer.username', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='email', full_name='pplogger.Consumer.email', index=2,
+      name='email', full_name='ppconsumer.Consumer.email', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='installations', full_name='pplogger.Consumer.installations', index=3,
+      name='installations', full_name='ppconsumer.Consumer.installations', index=3,
       number=4, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -73,27 +73,27 @@ _CONSUMER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=30,
-  serialized_end=132,
+  serialized_start=32,
+  serialized_end=136,
 )
 
 
 _INSTALLATION = _descriptor.Descriptor(
   name='Installation',
-  full_name='pplogger.Installation',
+  full_name='ppconsumer.Installation',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='IDNumber', full_name='pplogger.Installation.IDNumber', index=0,
+      name='IDNumber', full_name='ppconsumer.Installation.IDNumber', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='deviceEUI', full_name='pplogger.Installation.deviceEUI', index=1,
+      name='deviceEUI', full_name='ppconsumer.Installation.deviceEUI', index=1,
       number=2, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -111,20 +111,20 @@ _INSTALLATION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=134,
-  serialized_end=185,
+  serialized_start=138,
+  serialized_end=189,
 )
 
 
 _CONSUMERREQUEST = _descriptor.Descriptor(
   name='ConsumerRequest',
-  full_name='pplogger.ConsumerRequest',
+  full_name='ppconsumer.ConsumerRequest',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='username', full_name='pplogger.ConsumerRequest.username', index=0,
+      name='username', full_name='ppconsumer.ConsumerRequest.username', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -142,20 +142,20 @@ _CONSUMERREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=187,
-  serialized_end=222,
+  serialized_start=191,
+  serialized_end=226,
 )
 
 
 _RESPONSE = _descriptor.Descriptor(
   name='Response',
-  full_name='pplogger.Response',
+  full_name='ppconsumer.Response',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='reply', full_name='pplogger.Response.reply', index=0,
+      name='reply', full_name='ppconsumer.Response.reply', index=0,
       number=1, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
@@ -173,8 +173,8 @@ _RESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=224,
-  serialized_end=249,
+  serialized_start=228,
+  serialized_end=253,
 )
 
 _CONSUMER.fields_by_name['installations'].message_type = _INSTALLATION
@@ -187,28 +187,28 @@ _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 Consumer = _reflection.GeneratedProtocolMessageType('Consumer', (_message.Message,), {
   'DESCRIPTOR' : _CONSUMER,
   '__module__' : 'ppconsumer_pb2'
-  # @@protoc_insertion_point(class_scope:pplogger.Consumer)
+  # @@protoc_insertion_point(class_scope:ppconsumer.Consumer)
   })
 _sym_db.RegisterMessage(Consumer)
 
 Installation = _reflection.GeneratedProtocolMessageType('Installation', (_message.Message,), {
   'DESCRIPTOR' : _INSTALLATION,
   '__module__' : 'ppconsumer_pb2'
-  # @@protoc_insertion_point(class_scope:pplogger.Installation)
+  # @@protoc_insertion_point(class_scope:ppconsumer.Installation)
   })
 _sym_db.RegisterMessage(Installation)
 
 ConsumerRequest = _reflection.GeneratedProtocolMessageType('ConsumerRequest', (_message.Message,), {
   'DESCRIPTOR' : _CONSUMERREQUEST,
   '__module__' : 'ppconsumer_pb2'
-  # @@protoc_insertion_point(class_scope:pplogger.ConsumerRequest)
+  # @@protoc_insertion_point(class_scope:ppconsumer.ConsumerRequest)
   })
 _sym_db.RegisterMessage(ConsumerRequest)
 
 Response = _reflection.GeneratedProtocolMessageType('Response', (_message.Message,), {
   'DESCRIPTOR' : _RESPONSE,
   '__module__' : 'ppconsumer_pb2'
-  # @@protoc_insertion_point(class_scope:pplogger.Response)
+  # @@protoc_insertion_point(class_scope:ppconsumer.Response)
   })
 _sym_db.RegisterMessage(Response)
 
@@ -216,16 +216,16 @@ _sym_db.RegisterMessage(Response)
 
 _CONSUMERSERVICE = _descriptor.ServiceDescriptor(
   name='ConsumerService',
-  full_name='pplogger.ConsumerService',
+  full_name='ppconsumer.ConsumerService',
   file=DESCRIPTOR,
   index=0,
   serialized_options=None,
-  serialized_start=252,
-  serialized_end=520,
+  serialized_start=256,
+  serialized_end=540,
   methods=[
   _descriptor.MethodDescriptor(
     name='CreateConsumer',
-    full_name='pplogger.ConsumerService.CreateConsumer',
+    full_name='ppconsumer.ConsumerService.CreateConsumer',
     index=0,
     containing_service=None,
     input_type=_CONSUMER,
@@ -234,7 +234,7 @@ _CONSUMERSERVICE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='UpdateConsumer',
-    full_name='pplogger.ConsumerService.UpdateConsumer',
+    full_name='ppconsumer.ConsumerService.UpdateConsumer',
     index=1,
     containing_service=None,
     input_type=_CONSUMER,
@@ -243,7 +243,7 @@ _CONSUMERSERVICE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='GetConsumer',
-    full_name='pplogger.ConsumerService.GetConsumer',
+    full_name='ppconsumer.ConsumerService.GetConsumer',
     index=2,
     containing_service=None,
     input_type=_CONSUMERREQUEST,
@@ -252,7 +252,7 @@ _CONSUMERSERVICE = _descriptor.ServiceDescriptor(
   ),
   _descriptor.MethodDescriptor(
     name='DeleteConsumer',
-    full_name='pplogger.ConsumerService.DeleteConsumer',
+    full_name='ppconsumer.ConsumerService.DeleteConsumer',
     index=3,
     containing_service=None,
     input_type=_CONSUMERREQUEST,
