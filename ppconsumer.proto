@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package pplogger;
+
+message Consumer {
+  int32 id = 1;
+  string username = 2;
+  string email = 3;
+  repeated Installation installations = 4;
+}
+
+message Installation {
+  string IDNumber = 1;
+  repeated string deviceEUI = 2;
+}
+
+message ConsumerRequest {
+  string username = 1;
+}
+
+message Response {
+  string reply = 1;
+}
+
+
+service LoggerService {
+  rpc CreateConsumer(Consumer) returns (Consumer) {}
+  rpc UpdateConsumer(Consumer) returns (Consumer) {}
+  rpc GetConsumer(ConsumerRequest) returns (Consumer) {}
+  rpc DeleteConsumer(ConsumerRequest) returns (Response) {}
+
+}
