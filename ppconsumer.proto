@@ -23,7 +23,7 @@ message Response {
 }
 
 
-service LoggerService {
+service ConsumerService {
   rpc CreateConsumer(Consumer) returns (Consumer) {}
   rpc UpdateConsumer(Consumer) returns (Consumer) {}
   rpc GetConsumer(ConsumerRequest) returns (Consumer) {}
