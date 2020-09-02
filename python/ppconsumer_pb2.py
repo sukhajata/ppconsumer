@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='ppconsumer',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n\x10ppconsumer.proto\x12\nppconsumer\"h\n\x08\x43onsumer\x12\n\n\x02id\x18\x01 \x01(\x05\x12\x10\n\x08username\x18\x02 \x01(\t\x12\r\n\x05\x65mail\x18\x03 \x01(\t\x12/\n\rinstallations\x18\x04 \x03(\x0b\x32\x18.ppconsumer.Installation\"3\n\x0cInstallation\x12\x10\n\x08IDNumber\x18\x01 \x01(\t\x12\x11\n\tdeviceEUI\x18\x02 \x03(\t\"#\n\x0f\x43onsumerRequest\x12\x10\n\x08username\x18\x01 \x01(\t\"\x19\n\x08Response\x12\r\n\x05reply\x18\x01 \x01(\t2\x9c\x02\n\x0f\x43onsumerService\x12>\n\x0e\x43reateConsumer\x12\x14.ppconsumer.Consumer\x1a\x14.ppconsumer.Consumer\"\x00\x12>\n\x0eUpdateConsumer\x12\x14.ppconsumer.Consumer\x1a\x14.ppconsumer.Consumer\"\x00\x12\x42\n\x0bGetConsumer\x12\x1b.ppconsumer.ConsumerRequest\x1a\x14.ppconsumer.Consumer\"\x00\x12\x45\n\x0e\x44\x65leteConsumer\x12\x1b.ppconsumer.ConsumerRequest\x1a\x14.ppconsumer.Response\"\x00\x62\x06proto3')
+  serialized_pb=_b('\n\x10ppconsumer.proto\x12\nppconsumer\"j\n\x08\x43onsumer\x12\x10\n\x08username\x18\x01 \x01(\t\x12\r\n\x05\x65mail\x18\x02 \x01(\t\x12/\n\rinstallations\x18\x03 \x03(\x0b\x32\x18.ppconsumer.Installation\x12\x0c\n\x04type\x18\x04 \x01(\t\"3\n\x0cInstallation\x12\x10\n\x08IDNumber\x18\x01 \x01(\t\x12\x11\n\tdeviceEUI\x18\x02 \x03(\t\"#\n\x0f\x43onsumerRequest\x12\x10\n\x08username\x18\x01 \x01(\t\"\x19\n\x08Response\x12\r\n\x05reply\x18\x01 \x01(\t2\x9c\x02\n\x0f\x43onsumerService\x12>\n\x0e\x43reateConsumer\x12\x14.ppconsumer.Consumer\x1a\x14.ppconsumer.Consumer\"\x00\x12>\n\x0eUpdateConsumer\x12\x14.ppconsumer.Consumer\x1a\x14.ppconsumer.Consumer\"\x00\x12\x42\n\x0bGetConsumer\x12\x1b.ppconsumer.ConsumerRequest\x1a\x14.ppconsumer.Consumer\"\x00\x12\x45\n\x0e\x44\x65leteConsumer\x12\x1b.ppconsumer.ConsumerRequest\x1a\x14.ppconsumer.Response\"\x00\x62\x06proto3')
 )
 
 
@@ -34,30 +34,30 @@ _CONSUMER = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='id', full_name='ppconsumer.Consumer.id', index=0,
-      number=1, type=5, cpp_type=1, label=1,
-      has_default_value=False, default_value=0,
+      name='username', full_name='ppconsumer.Consumer.username', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='username', full_name='ppconsumer.Consumer.username', index=1,
+      name='email', full_name='ppconsumer.Consumer.email', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='email', full_name='ppconsumer.Consumer.email', index=2,
-      number=3, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=_b("").decode('utf-8'),
+      name='installations', full_name='ppconsumer.Consumer.installations', index=2,
+      number=3, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='installations', full_name='ppconsumer.Consumer.installations', index=3,
-      number=4, type=11, cpp_type=10, label=3,
-      has_default_value=False, default_value=[],
+      name='type', full_name='ppconsumer.Consumer.type', index=3,
+      number=4, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
@@ -74,7 +74,7 @@ _CONSUMER = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=32,
-  serialized_end=136,
+  serialized_end=138,
 )
 
 
@@ -111,8 +111,8 @@ _INSTALLATION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=138,
-  serialized_end=189,
+  serialized_start=140,
+  serialized_end=191,
 )
 
 
@@ -142,8 +142,8 @@ _CONSUMERREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=191,
-  serialized_end=226,
+  serialized_start=193,
+  serialized_end=228,
 )
 
 
@@ -173,8 +173,8 @@ _RESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=228,
-  serialized_end=253,
+  serialized_start=230,
+  serialized_end=255,
 )
 
 _CONSUMER.fields_by_name['installations'].message_type = _INSTALLATION
@@ -220,8 +220,8 @@ _CONSUMERSERVICE = _descriptor.ServiceDescriptor(
   file=DESCRIPTOR,
   index=0,
   serialized_options=None,
-  serialized_start=256,
-  serialized_end=540,
+  serialized_start=258,
+  serialized_end=542,
   methods=[
   _descriptor.MethodDescriptor(
     name='CreateConsumer',

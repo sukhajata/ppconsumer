@@ -106,7 +106,7 @@ if (goog.DEBUG && !COMPILED) {
  * @private {!Array<number>}
  * @const
  */
-proto.ppconsumer.Consumer.repeatedFields_ = [4];
+proto.ppconsumer.Consumer.repeatedFields_ = [3];
 
 
 
@@ -139,11 +139,11 @@ proto.ppconsumer.Consumer.prototype.toObject = function(opt_includeInstance) {
  */
 proto.ppconsumer.Consumer.toObject = function(includeInstance, msg) {
   var f, obj = {
-    id: jspb.Message.getFieldWithDefault(msg, 1, 0),
-    username: jspb.Message.getFieldWithDefault(msg, 2, ""),
-    email: jspb.Message.getFieldWithDefault(msg, 3, ""),
+    username: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    email: jspb.Message.getFieldWithDefault(msg, 2, ""),
     installationsList: jspb.Message.toObjectList(msg.getInstallationsList(),
-    proto.ppconsumer.Installation.toObject, includeInstance)
+    proto.ppconsumer.Installation.toObject, includeInstance),
+    type: jspb.Message.getFieldWithDefault(msg, 4, "")
   };
 
   if (includeInstance) {
@@ -181,21 +181,21 @@ proto.ppconsumer.Consumer.deserializeBinaryFromReader = function(msg, reader) {
     var field = reader.getFieldNumber();
     switch (field) {
     case 1:
-      var value = /** @type {number} */ (reader.readInt32());
-      msg.setId(value);
-      break;
-    case 2:
       var value = /** @type {string} */ (reader.readString());
       msg.setUsername(value);
       break;
-    case 3:
+    case 2:
       var value = /** @type {string} */ (reader.readString());
       msg.setEmail(value);
       break;
-    case 4:
+    case 3:
       var value = new proto.ppconsumer.Installation;
       reader.readMessage(value,proto.ppconsumer.Installation.deserializeBinaryFromReader);
       msg.addInstallations(value);
+      break;
+    case 4:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setType(value);
       break;
     default:
       reader.skipField();
@@ -226,62 +226,44 @@ proto.ppconsumer.Consumer.prototype.serializeBinary = function() {
  */
 proto.ppconsumer.Consumer.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
-  f = message.getId();
-  if (f !== 0) {
-    writer.writeInt32(
-      1,
-      f
-    );
-  }
   f = message.getUsername();
   if (f.length > 0) {
     writer.writeString(
-      2,
+      1,
       f
     );
   }
   f = message.getEmail();
   if (f.length > 0) {
     writer.writeString(
-      3,
+      2,
       f
     );
   }
   f = message.getInstallationsList();
   if (f.length > 0) {
     writer.writeRepeatedMessage(
-      4,
+      3,
       f,
       proto.ppconsumer.Installation.serializeBinaryToWriter
+    );
+  }
+  f = message.getType();
+  if (f.length > 0) {
+    writer.writeString(
+      4,
+      f
     );
   }
 };
 
 
 /**
- * optional int32 id = 1;
- * @return {number}
- */
-proto.ppconsumer.Consumer.prototype.getId = function() {
-  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
-};
-
-
-/**
- * @param {number} value
- * @return {!proto.ppconsumer.Consumer} returns this
- */
-proto.ppconsumer.Consumer.prototype.setId = function(value) {
-  return jspb.Message.setProto3IntField(this, 1, value);
-};
-
-
-/**
- * optional string username = 2;
+ * optional string username = 1;
  * @return {string}
  */
 proto.ppconsumer.Consumer.prototype.getUsername = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
 
 
@@ -290,16 +272,16 @@ proto.ppconsumer.Consumer.prototype.getUsername = function() {
  * @return {!proto.ppconsumer.Consumer} returns this
  */
 proto.ppconsumer.Consumer.prototype.setUsername = function(value) {
-  return jspb.Message.setProto3StringField(this, 2, value);
+  return jspb.Message.setProto3StringField(this, 1, value);
 };
 
 
 /**
- * optional string email = 3;
+ * optional string email = 2;
  * @return {string}
  */
 proto.ppconsumer.Consumer.prototype.getEmail = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
 
 
@@ -308,17 +290,17 @@ proto.ppconsumer.Consumer.prototype.getEmail = function() {
  * @return {!proto.ppconsumer.Consumer} returns this
  */
 proto.ppconsumer.Consumer.prototype.setEmail = function(value) {
-  return jspb.Message.setProto3StringField(this, 3, value);
+  return jspb.Message.setProto3StringField(this, 2, value);
 };
 
 
 /**
- * repeated Installation installations = 4;
+ * repeated Installation installations = 3;
  * @return {!Array<!proto.ppconsumer.Installation>}
  */
 proto.ppconsumer.Consumer.prototype.getInstallationsList = function() {
   return /** @type{!Array<!proto.ppconsumer.Installation>} */ (
-    jspb.Message.getRepeatedWrapperField(this, proto.ppconsumer.Installation, 4));
+    jspb.Message.getRepeatedWrapperField(this, proto.ppconsumer.Installation, 3));
 };
 
 
@@ -327,7 +309,7 @@ proto.ppconsumer.Consumer.prototype.getInstallationsList = function() {
  * @return {!proto.ppconsumer.Consumer} returns this
 */
 proto.ppconsumer.Consumer.prototype.setInstallationsList = function(value) {
-  return jspb.Message.setRepeatedWrapperField(this, 4, value);
+  return jspb.Message.setRepeatedWrapperField(this, 3, value);
 };
 
 
@@ -337,7 +319,7 @@ proto.ppconsumer.Consumer.prototype.setInstallationsList = function(value) {
  * @return {!proto.ppconsumer.Installation}
  */
 proto.ppconsumer.Consumer.prototype.addInstallations = function(opt_value, opt_index) {
-  return jspb.Message.addToRepeatedWrapperField(this, 4, opt_value, proto.ppconsumer.Installation, opt_index);
+  return jspb.Message.addToRepeatedWrapperField(this, 3, opt_value, proto.ppconsumer.Installation, opt_index);
 };
 
 
@@ -347,6 +329,24 @@ proto.ppconsumer.Consumer.prototype.addInstallations = function(opt_value, opt_i
  */
 proto.ppconsumer.Consumer.prototype.clearInstallationsList = function() {
   return this.setInstallationsList([]);
+};
+
+
+/**
+ * optional string type = 4;
+ * @return {string}
+ */
+proto.ppconsumer.Consumer.prototype.getType = function() {
+  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 4, ""));
+};
+
+
+/**
+ * @param {string} value
+ * @return {!proto.ppconsumer.Consumer} returns this
+ */
+proto.ppconsumer.Consumer.prototype.setType = function(value) {
+  return jspb.Message.setProto3StringField(this, 4, value);
 };
 
 
