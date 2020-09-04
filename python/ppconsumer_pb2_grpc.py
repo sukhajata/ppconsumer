@@ -17,7 +17,7 @@ class ConsumerServiceStub(object):
     self.CreateConsumer = channel.unary_unary(
         '/ppconsumer.ConsumerService/CreateConsumer',
         request_serializer=ppconsumer__pb2.Consumer.SerializeToString,
-        response_deserializer=ppconsumer__pb2.Consumer.FromString,
+        response_deserializer=ppconsumer__pb2.CreateConsumerResponse.FromString,
         )
     self.UpdateConsumer = channel.unary_unary(
         '/ppconsumer.ConsumerService/UpdateConsumer',
@@ -74,7 +74,7 @@ def add_ConsumerServiceServicer_to_server(servicer, server):
       'CreateConsumer': grpc.unary_unary_rpc_method_handler(
           servicer.CreateConsumer,
           request_deserializer=ppconsumer__pb2.Consumer.FromString,
-          response_serializer=ppconsumer__pb2.Consumer.SerializeToString,
+          response_serializer=ppconsumer__pb2.CreateConsumerResponse.SerializeToString,
       ),
       'UpdateConsumer': grpc.unary_unary_rpc_method_handler(
           servicer.UpdateConsumer,

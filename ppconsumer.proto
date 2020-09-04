@@ -18,13 +18,17 @@ message ConsumerRequest {
   string username = 1;
 }
 
+message CreateConsumerResponse {
+  string password = 1;
+}
+
 message Response {
   string reply = 1;
 }
 
 
 service ConsumerService {
-  rpc CreateConsumer(Consumer) returns (Consumer) {}
+  rpc CreateConsumer(Consumer) returns (CreateConsumerResponse) {}
   rpc UpdateConsumer(Consumer) returns (Consumer) {}
   rpc GetConsumer(ConsumerRequest) returns (Consumer) {}
   rpc DeleteConsumer(ConsumerRequest) returns (Response) {}

@@ -70,13 +70,13 @@ proto.ppconsumer.ConsumerServicePromiseClient =
  * @const
  * @type {!grpc.web.MethodDescriptor<
  *   !proto.ppconsumer.Consumer,
- *   !proto.ppconsumer.Consumer>}
+ *   !proto.ppconsumer.CreateConsumerResponse>}
  */
 const methodDescriptor_ConsumerService_CreateConsumer = new grpc.web.MethodDescriptor(
   '/ppconsumer.ConsumerService/CreateConsumer',
   grpc.web.MethodType.UNARY,
   proto.ppconsumer.Consumer,
-  proto.ppconsumer.Consumer,
+  proto.ppconsumer.CreateConsumerResponse,
   /**
    * @param {!proto.ppconsumer.Consumer} request
    * @return {!Uint8Array}
@@ -84,7 +84,7 @@ const methodDescriptor_ConsumerService_CreateConsumer = new grpc.web.MethodDescr
   function(request) {
     return request.serializeBinary();
   },
-  proto.ppconsumer.Consumer.deserializeBinary
+  proto.ppconsumer.CreateConsumerResponse.deserializeBinary
 );
 
 
@@ -92,10 +92,10 @@ const methodDescriptor_ConsumerService_CreateConsumer = new grpc.web.MethodDescr
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
  *   !proto.ppconsumer.Consumer,
- *   !proto.ppconsumer.Consumer>}
+ *   !proto.ppconsumer.CreateConsumerResponse>}
  */
 const methodInfo_ConsumerService_CreateConsumer = new grpc.web.AbstractClientBase.MethodInfo(
-  proto.ppconsumer.Consumer,
+  proto.ppconsumer.CreateConsumerResponse,
   /**
    * @param {!proto.ppconsumer.Consumer} request
    * @return {!Uint8Array}
@@ -103,7 +103,7 @@ const methodInfo_ConsumerService_CreateConsumer = new grpc.web.AbstractClientBas
   function(request) {
     return request.serializeBinary();
   },
-  proto.ppconsumer.Consumer.deserializeBinary
+  proto.ppconsumer.CreateConsumerResponse.deserializeBinary
 );
 
 
@@ -112,9 +112,9 @@ const methodInfo_ConsumerService_CreateConsumer = new grpc.web.AbstractClientBas
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @param {function(?grpc.web.Error, ?proto.ppconsumer.Consumer)}
+ * @param {function(?grpc.web.Error, ?proto.ppconsumer.CreateConsumerResponse)}
  *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.ppconsumer.Consumer>|undefined}
+ * @return {!grpc.web.ClientReadableStream<!proto.ppconsumer.CreateConsumerResponse>|undefined}
  *     The XHR Node Readable Stream
  */
 proto.ppconsumer.ConsumerServiceClient.prototype.createConsumer =
@@ -133,7 +133,7 @@ proto.ppconsumer.ConsumerServiceClient.prototype.createConsumer =
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @return {!Promise<!proto.ppconsumer.Consumer>}
+ * @return {!Promise<!proto.ppconsumer.CreateConsumerResponse>}
  *     A native promise that resolves to the response
  */
 proto.ppconsumer.ConsumerServicePromiseClient.prototype.createConsumer =
