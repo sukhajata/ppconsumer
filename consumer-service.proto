@@ -5,13 +5,8 @@ package ppconsumer;
 message Consumer {
   string username = 1;
   string email = 2;
-  repeated Installation installations = 3;
+  repeated string installations = 3;
   string type = 4;
-}
-
-message Installation {
-  string IDNumber = 1;
-  repeated string deviceEUI = 2;
 }
 
 message ConsumerRequest {
