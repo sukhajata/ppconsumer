@@ -1,4 +1,4 @@
-// source: ppconsumer.proto
+// source: consumer-service.proto
 /**
  * @fileoverview
  * @enhanceable

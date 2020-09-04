@@ -12,7 +12,7 @@ const grpc = {};
 grpc.web = require('grpc-web');
 
 const proto = {};
-proto.ppconsumer = require('./ppconsumer_pb.js');
+proto.ppconsumer = require('./consumer-service_pb.js');
 
 /**
  * @param {string} hostname
